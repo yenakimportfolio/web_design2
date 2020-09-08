@@ -1,0 +1,19 @@
+body {
+    margin: 0px;
+}
+main {
+    padding: 10px; 
+    background-color: cadetblue;
+
+}
+@media(min-width: 786px;){
+    main {
+        width: 700px;
+        margin: auto;
+    }
+}
+@media(min-width: 1023px){
+    main {
+        background-color: brown;
+    }
+}
