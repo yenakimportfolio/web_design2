@@ -1,0 +1,89 @@
+body { 
+    background-color: whitesmoke; 
+}
+h1 { 
+    background-color: hsla(0, 0%, 0%, 0); 
+    text-align: center;
+    font-family: "Caveat";
+    width: 100%;
+}
+main{ 
+    width: 100%;
+    margin: auto;
+}
+#image1 {
+    width: 100%;
+}
+#image2 {
+    width: 100%; 
+    float: left; 
+    padding-right: 20px; 
+    padding-top: 10px;
+    padding-bottom: 20px; 
+}
+p {
+    text-align: justify;
+    font-size: 12.5pt; 
+    font-family: "Rajdhani";
+}
+@media (min-width: 768px){
+    body { 
+        background-color: skyblue; 
+    }
+    h1 { 
+        background-color: white; 
+        text-align: center;
+        font-family: "Caveat";
+        width: 100%;
+    }
+    main{ 
+        width: 700px;
+        margin: auto;
+    }
+    #image1 {
+        width: 100%;
+    }
+    #image2 {
+        width: 350px; 
+        float: left; 
+        padding-right: 20px; 
+    }
+    p {
+        text-align: justify;
+        font-size: 12.5pt; 
+        font-family: "Rajdhani";
+    }
+}
+@media (min-width: 1024px){
+    body { 
+        background-color: pink; 
+    }
+    h1 { 
+        background-color: hsla(0, 0%, 0%, 0); 
+        text-align: center;
+        font-family: "Caveat";
+        color: white;
+        font-size: 40pt;
+    }
+    main{ 
+        width: 1000px;
+        margin: auto;
+        text-align: center;
+    }
+    #image1 {
+        width: 480px;
+        display: inline-block;
+    }
+    #image2 {
+        width: 480px; 
+        float: none;
+        padding: 0px; 
+    }
+    p {
+        font-size: 15pt; 
+        font-family: "Rajdhani";
+        text-align: justify;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}

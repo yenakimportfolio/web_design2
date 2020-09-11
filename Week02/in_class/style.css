@@ -4,11 +4,10 @@ body {
 main {
     padding: 10px; 
     background-color: cadetblue;
-
 }
-@media(min-width: 786px;){
+@media(min-width: 667px){
     main {
-        width: 700px;
+        width: 600px;
         margin: auto;
     }
 }
