@@ -1,0 +1,72 @@
+body { 
+     margin: 0px;
+ }
+header { 
+     padding: 10px;
+ }
+.flex { 
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.flex ul{ 
+    list-style: none;
+    margin: 0px;
+    padding: 20px 7px 0px;
+}
+.flex li { 
+    margin: 5px;
+    font-family: 'Mukta'; 
+    font-size: 12pt;
+}
+.flex img{ 
+    width: 150px;
+}
+.photos { 
+    display: flex;
+    flex-direction: column;
+    padding: 20px;  
+}
+.photos img { 
+    width: 100%;
+    padding: 5px;
+}
+@media(min-width: 768px){
+    nav { 
+        width: 300px;
+        margin: auto auto;
+    }
+    .flex { 
+        justify-content: center;
+        display: flex; 
+        flex-direction: row; 
+        flex-wrap: wrap; 
+    }
+    .flex img { 
+        width: 150px;
+    }
+    .flex ul { 
+        flex-direction: row;
+        justify-content: center; 
+    }
+    .flex li { 
+        margin: 5px;
+        font-family: 'Mukta'; 
+        font-size: 12pt;
+    }
+    .photos { 
+        display: flex; 
+        flex-direction: row;
+        padding: 5px;
+        width: 100%;
+        margin: auto auto;
+        flex-wrap: wrap; 
+        justify-content: center; 
+    }
+    .photos img { 
+        width: 30%; 
+    }
+    .photos img:last-child { 
+        width: 60%;
+    }
+}
