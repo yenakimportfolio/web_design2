@@ -1,0 +1,84 @@
+body {
+margin: 20px;
+}
+.sidebar {
+    grid-area: sidebar;
+    font-family: "Caveat";
+    font-size: 18pt;
+}
+.sidebar2 {
+    grid-area: sidebar2;
+}
+.content {
+    grid-area: content;
+    font-size: 12pt;
+    text-align: justify;
+    font-family: "Quicksand";
+}
+.header {
+    grid-area: header;
+    font-size: 40pt;
+    font-family: "Caveat";
+}
+.footer {
+    grid-area: footer;
+    padding-top: 200px;
+    font-size: 8pt;
+}
+.wrapper {
+    background-color: #fff;
+}
+.wrapper {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas:
+    "header"
+    "sidebar"
+    "content"
+    "sidebar2"
+    "footer"
+}
+.catimages {
+    width: 100%;
+}
+.cathunt { 
+    width: 100%;
+}
+.box {
+    color: black;
+    border-radius: 5px;
+    padding: 10px;
+}
+.header,
+.footer {
+    background-color: white;
+}
+.sidebar2 {
+    background-color: white;
+}
+@media only screen and (min-width: 768px) {
+    .wrapper {
+        grid-template-columns: 20% auto;
+        grid-template-areas:
+        "header   header"
+        "sidebar  content"
+        "sidebar2 sidebar2"
+        "footer   footer";
+    }
+    .catimages {
+        width: 33%;
+    }
+    .footer {
+        grid-area: footer;
+        padding-top: 100px;
+        font-size: 12pt;
+    }
+    .cathunt { 
+        width: 50%;
+        float: left; 
+        padding-right: 20px;
+    }
+    .content p {
+        padding-top: 0px;
+    }
+}

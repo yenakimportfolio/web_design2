@@ -1,0 +1,55 @@
+body {
+    margin: 40px;
+}  
+.sidebar {
+    grid-area: sidebar;
+    font-family: "Caveat";
+}
+.content {
+    grid-area: content;
+}
+.header {
+    grid-area: header;
+}
+.footer {
+    grid-area: footer;
+}
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 20% 40% 40%;
+        grid-template-areas:
+    "....... header header"
+    "sidebar content content"
+    "footer  footer  footer";
+    background-color: #fff;
+    color: #444;
+}
+.box {
+    color: black;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 150%;
+}
+.header {
+    font-size: 40pt;
+    font-family: "Caveat";
+}
+.footer {
+    padding-top: 200px;
+    font-size: 12pt;
+}
+.catposter {
+    width: 100%;
+}
+.catinforest { 
+    width: 50%;
+    float: left;
+    margin-right: 20px;
+}
+.content p { 
+    font-size: 14pt;
+    margin-right: 20px;
+    text-align: justify;
+    font-family: "Quicksand";
+} 
