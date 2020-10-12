@@ -1,0 +1,145 @@
+body {
+    margin: 40px;
+}
+
+.appetizer {
+    grid-area: appetizer;
+    text-align: justify;
+    width: 100%;
+}
+
+.entree {
+    grid-area: entree;
+    text-align: justify;
+    width: 100%;
+}
+.drinks {
+    grid-area: drinks;
+    text-align: justify;
+    width: 100%;
+}
+
+.header {
+    grid-area: header;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 100%;
+    grid-template-areas:
+    "header"
+    "appetizer"
+    "entree"
+    "drinks";
+    background-color: #fff;
+    color: #444;
+}
+
+.box {
+    color: black;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 150%;
+}
+
+img.toggle-img { 
+    width: 40px;
+    padding: 1px;
+}
+
+input#Toggle {
+    display: none; 
+}
+
+label[for="Toggle"] {
+    float: right; 
+}
+
+input#Toggle:checked + ul {
+    display: block; 
+}
+
+nav ul { 
+    list-style: none;
+    margin: 0px;
+    padding: 20px 7px 0px;
+    display: none;
+    text-align: right;
+    font-family: 'Nunito';
+}
+
+nav ul li { 
+    padding: 10px 0px; 
+}
+
+nav ul li:last-child { 
+    border-bottom: none;
+}
+
+nav ul a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    color: green;
+}
+
+.nav-logo {
+    max-width: 100%;
+    width: 200px;
+    margin: auto auto;
+    text-align: left;
+}
+.menu-table { 
+    width: 100%;
+}
+
+.menu-table img { 
+    width: 60px;
+}
+
+.menu-description {
+    padding-left: 10px;
+}
+
+.menu-thumbnail { 
+    width: 70px;
+}
+
+.menu-price { 
+    width: 70px;
+    text-align: right;
+}
+
+@media(min-width: 1024px){
+    label[for="Toggle"]{
+        display: none;
+    }
+
+    nav ul {
+        display: block;
+        float: none; 
+        padding: 0px;
+        width: 50%;
+        margin: auto auto; 
+        padding-top: 10px;
+        text-align: center;
+    }
+    
+    nav ul li {
+        list-style: none; 
+        display: inline-block; 
+        margin-right: 20px;
+        padding: 10px 0px; 
+    }
+    .nav-logo {
+        max-width: 100%;
+        width: 400px;
+        margin: auto auto;
+        display: block;
+    }
+}
