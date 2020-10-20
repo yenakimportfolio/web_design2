@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="contact.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat|Quicksand">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jaldi|Quicksand">
 
     <title>Tom's Sushi House</title>
 </head>
@@ -19,42 +19,63 @@
                 <input type="checkbox" id="Toggle">
             <ul>
                 <li ><a href="index.html">Home</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="photos.html">Photos</a></li>
+                <li><a href="photos.html">Menu</a></li>
                 <li style="font-weight: bold"><a href="contact.html">Contact</a></li>
             </ul>
             </nav>
         </div>
-        <div class="box name-label">
-            Name
+
+    </div>      
+    <form>
+        <div class="contact-form">
+            <table class="contact-table">
+                <tr>
+                    <td>
+                        Name
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" id="contact-name">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Email 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" id="contact-email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Subject 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" id="contact-subject">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Message 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <textarea id="contact-message"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" id="contact-submit">
+                    </td>
+                </tr>
+            </table>
         </div>
-        <div class="box name-content">
-            <input type="text">
-        </div>
-        <div class="box email-label">
-            Email
-        </div>
-        <div class="box email-content">
-            <input type="text">
-        </div>
-        <div class="box phone-label">
-            Phone
-        </div>
-        <div class="box phone-content">
-            <input type="text">
-        </div>
-        <div class="box message-label">
-            Message
-        </div>
-        <div class="box message-content">
-            <textarea></textarea>
-        </div>
-        <div class="box submit-label">
-            &nbsp;
-        </div>
-        <div class="box submit-content">
-            <input type="submit">
-        </div>
-    </div>
+    </form>  
 </body>
 </html>

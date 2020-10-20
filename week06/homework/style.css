@@ -1,18 +1,17 @@
-body {
-    margin: 40px;
-}
-
 .sidebar {
     grid-area: sidebar;
-    height: 200px;
     margin: 0px;
-    text-align: center;
-    line-height: 200px;
+    text-align: center;    
+}
+.background-img { 
+    width: 100%;
 }
 
 .content {
     grid-area: content;
     text-align: justify;
+    margin-top: 5px;
+
 }
 
 .header {
@@ -26,9 +25,21 @@ body {
     grid-template-areas:
     "header"
     "sidebar"
-    "content";
+    "content"
+    "hours";
     background-color: #fff;
     color: #444;
+}
+.hours { 
+    grid-area: hours;
+    font-family: 'Jaldi';
+}
+.hours h4 { 
+    margin: 2px;
+}
+.map {
+    width: 100%;
+    height: 400px;
 }
 
 .box {
@@ -61,7 +72,7 @@ nav ul {
     padding: 20px 7px 0px;
     display: none;
     text-align: right;
-    font-family: 'Nunito';
+    font-family: 'Jaldi';
 }
 
 nav ul li { 
@@ -85,7 +96,7 @@ nav ul li a:hover {
 
 .nav-logo {
     max-width: 100%;
-    width: 200px;
+    width: 250px;
     margin: auto auto;
     text-align: left;
 }
@@ -94,7 +105,17 @@ nav ul li a:hover {
     label[for="Toggle"]{
         display: none;
     }
-
+    .wrapper {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 60% 40%;
+        grid-template-areas:
+        "header header"
+        "sidebar sidebar"
+        "content hours";
+        background-color: #fff;
+        color: #444;
+    }
     nav ul {
         display: block;
         float: none; 
@@ -117,4 +138,14 @@ nav ul li a:hover {
         margin: auto auto;
         display: block;
     }
+    .content {
+        grid-area: content;
+        text-align: justify;
+        margin-top: 5px;
+    }
+    .map {
+        width: 600px;
+        height: 400px;
+    }
+    
 }

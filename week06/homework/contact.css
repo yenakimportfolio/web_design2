@@ -1,38 +1,3 @@
-body {
-    margin: 40px;
-}
-
-.name-label {
-    grid-area: name-label;
-}
-.name-content {
-    grid-area: name-content;
-}
-.email-label {
-    grid-area: email-label;
-}
-.email-content {
-    grid-area: email-content;
-}
-.phone-label {
-    grid-area: phone-label;
-}
-.phone-content {
-    grid-area: phone-content;
-}
-.message-label {
-    grid-area: message-label;
-}
-.message-content {
-    grid-area: message-content;
-}
-.submit-label {
-    grid-area: submit-label;
-}
-.submit-content {
-    grid-area: submit-content;
-}
-
 .header {
     grid-area: header;
     padding-bottom: 50px;
@@ -43,17 +8,7 @@ body {
     grid-gap: 10px;
     grid-template-columns: 100%;
     grid-template-areas:
-    "header"
-    "name-label"
-    "name-content"
-    "email-label"
-    "email-content"
-    "phone-label"
-    "phone-content"
-    "message-label"
-    "message-content"
-    "submit-label"
-    "submit-content";
+    "header";
     background-color: #fff;
     color: #444;
 }
@@ -61,24 +16,35 @@ body {
 .box {
     color: black;
     border-radius: 5px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 10px;
     font-size: 150%;
 }
 
-.box input[type=text]{
+input[type=text]{
     width: 100%;
     height: 20px;
 }
+.contact-table { 
+    width: 100%;
+    margin: auto auto; 
+}
 
-.box textarea {
+.contact-form { 
+    width: 85%;
+    margin: auto auto; 
+    padding-top: 50px;
+}
+
+textarea {
     width: 100%;
     height: 200px;
 }
-.box input[type=submit]{
+
+input[type=submit]{
     height: 30px;
     width: 100px;
 }
+
 img.toggle-img { 
     width: 40px;
     padding: 1px;
@@ -102,7 +68,7 @@ nav ul {
     padding: 20px 7px 0px;
     display: none;
     text-align: right;
-    font-family: 'Nunito';
+    font-family: 'Jaldi';
 }
 
 nav ul li { 
@@ -126,7 +92,7 @@ nav ul li a:hover {
 
 .nav-logo {
     max-width: 100%;
-    width: 200px;
+    width: 250px;
     margin: auto auto;
     text-align: left;
 }
@@ -140,12 +106,7 @@ nav ul li a:hover {
         grid-gap: 10px;
         grid-template-columns: 10% 90%;
         grid-template-areas:
-        "header header"
-        "name-label name-content"
-        "email-label email-content"
-        "phone-label phone-content"
-        "message-label message-content"
-        "submit-label submit-content";
+        "header header";
         background-color: #fff;
         color: #444;
     }
@@ -171,12 +132,21 @@ nav ul li a:hover {
         margin: auto auto;
         display: block;
     }
-    .box input[type=text]{
-        width: 50%;
-        height: 20px;
+    input[type=text]{
+        width: 700px;
+        height: 25px;
     }
-    .box textarea {
-        width: 50%;
+    textarea {
+        width: 700px;
         height: 200px;
+    }
+    .contact-table { 
+        width: 702px;
+        margin: auto auto; 
+    }
+    .contact-form { 
+        width: 60%;
+        margin: auto auto; 
+        padding-top: 50px;
     }
 }
