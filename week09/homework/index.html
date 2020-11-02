@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weeo 09 Homework</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        #heading { 
+            background-color: lightpink;
+            margin: 0px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading">Welcome, <span id="userName">User</span>!</h1>
+
+    <div id="textBody"></div>
+
+    <button href="#" id="changeColor">Click Me</button>
+
+    <script>
+        let answer = prompt("What's your name?");
+        console.log(answer);
+        document.getElementById("userName").innerText = answer;
+
+        let trigButton = document.getElementById("changeColor")
+        let docHeader = document.getElementById("heading")
+
+        console.log(trigButton);
+
+        trigButton.addEventListener("click", function(){
+            let userAnswer = confirm("Are you sure you want to change the color?");
+            console.log(userAnswer);
+
+            if(userAnswer == true){
+                docHeader.style.backgroundColor = "skyBlue";
+                alert("Color has been changed!")
+            }
+            else {
+                alert("Nothing has changed")
+            }
+        });
+    </script>
+</body>
+</html>
