@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="blog.css">
+
+    <title>LA Animal Shelter Website</title>
+
+</head>
+<body>
+    <div class="alert">
+        <p>
+            Our Centers are open by appointment only, so you can still foster and adopt a pet. Due to COVID-19 and City Order, our Administrative Offices are temporarily closed to the public. <br>
+            For general assistance, please call (888) 452-7381. | For assistance with animal licensing, please call (213) 482-9550.
+        </p>
+    </div>
+    <div class="wrapper">
+        <div class="logo">   
+            <nav>
+                <a href="index.html"><img src="./images/logo.png" alt="logo" class="nav-logo"></a>
+            </nav>
+        </div>
+        <div class="navbar">
+            <nav>
+                <label for="Toggle">
+                    <img src="./images/hamburger.png" alt="menu toggle" class="toggle-img">
+                </label>
+                <input type="checkbox" id="Toggle" onclick="toggleMe()">
+                <ul id="navbarul">
+                    <li><a href="about.html">What We Do</a></li>
+                    <li><a href="blog.html">Our Stories</a></li>
+                    <li><a href="adopt.html">Search for Family</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="donate">
+            <nav>    
+                <ul id="donateul">
+                    <li><button id="donatebutton" onclick="location.href='donate.html'">DONATE</button></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="blogcontent">
+        <div class="blogheader">
+            <h1>Yena Kim's Blog</h1>
+        </div>
+        <div class="blogphoto0">
+            <img src="./images/placeholder.jpg" alt="photo">
+        </div>
+        <div class="blogtext0">
+            <h3>Blog Titile Goes Here</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+        </div>
+        <div class="blogphoto1">
+            <img src="./images/placeholder.jpg" alt="photo">
+        </div>
+        <div class="blogtext1">
+            <h3>Blog Titile Goes Here</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+        </div>
+        <div class="blogphoto2">
+            <img src="./images/placeholder.jpg" alt="photo">
+        </div>
+        <div class="blogtext2">
+            <h3>Blog Titile Goes Here</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+        </div>
+        <div class="blogphoto3">
+            <img src="./images/placeholder.jpg" alt="photo">
+        </div>
+        <div class="blogtext3">
+            <h3>Blog Titile Goes Here</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>
+            Department of Animal Services
+            221 N. Figueroa Street, Suite 600, Los Angeles, CA 90012 (888) 452-7381. Administrative Office Hours: Mon. - Fri. (8am-5pm) Sat., Sun. & Holidays. Our Administrative Office is currently closed due to COVID-19. However, we will be checking messages hourly during the regular business hours of 8am-5pm Monday through Friday.
+        </p>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        function toggleMe(){
+            if(document.getElementById("Toggle").checked){
+                document.getElementById("navbarul").style.display="block";
+                document.getElementById("donateul").style.display="block";
+            }
+            else{
+                document.getElementById("navbarul").style.display="none";
+                document.getElementById("donateul").style.display="none";
+            }
+        }
+    </script>
+</body>
+</html>
