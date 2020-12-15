@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Lobster">
+
+    <title>LA Animal Shelter Website</title>
+
+</head>
+<body>
+    <div class="alert" id="alertDiv">
+        <p>
+            Our Centers are open by appointment only, so you can still foster and adopt a pet. Due to COVID-19 and City Order, our Administrative Offices are temporarily closed to the public. <br>
+            For general assistance, please call (888) 452-7381. | For assistance with animal licensing, please call (213) 482-9550.
+        </p>
+        <img src="./images/x-white.png" alt="x button" onclick="hideAlert()">
+    </div>
+    <div class="wrapper">
+        <div class="logo">   
+            <nav>
+                <a href="index.html"><img src="./images/logo.png" alt="logo" class="nav-logo"></a>
+            </nav>
+        </div>
+        <div class="navbar">
+            <nav>
+                <label for="Toggle">
+                    <img src="./images/hamburger.png" alt="menu toggle" class="toggle-img" id="toggleImage">
+                </label>
+                <input type="checkbox" id="Toggle" onclick="toggleMe()">
+                <ul id="navbarul">
+                    <li><a href="about.html">What We Do</a></li>
+                    <li><a href="blog.html">Our Stories</a></li>
+                    <li><a href="#infoid">How To Help</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="donate">
+            <button id="donatebutton" onclick="location.href='donate.html'">DONATE</button>
+        </div>
+    </div>
+    <div class="content">
+         <img src="./images/homefront.png" alt="cutedog">
+    </div>
+
+    <div class="video">
+        <p>Meet Our Volunteers!</p>
+        <iframe src="https://www.youtube.com/embed/ECd7997G_GM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div class="info" id="infoid">
+        <div class="info1">
+            <img src="./images/homeblog.png" alt="dog">
+            <button onclick="location.href='blog.html'">LEARN MORE</button>
+        </div>
+        <div class="info2">
+            <img src="./images/homedonate.png" alt="cat">
+            <button onclick="location.href='donate.html'">DONATE NOW</button>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footerimage">
+            <img src="./images/facebook.png" alt="facebook logo">
+            <img src="./images/twitter.png" alt="twitter logo">
+            <img src="./images/instagram.png" alt="instagram logo">
+        </div>
+        <p>
+            Department of Animal Services
+            221 N. Figueroa Street, Suite 600, Los Angeles, CA 90012 (888) 452-7381. Administrative Office Hours: Mon. - Fri. (8am-5pm) Sat., Sun. & Holidays. <br> Our Administrative Office is currently closed due to COVID-19. However, we will be checking messages hourly during the regular business hours of 8am-5pm Monday through Friday.
+        </p>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        function hideAlert(){
+            document.getElementById("alertDiv").style.display="none";
+        }
+        function toggleMe(){
+            if(document.getElementById("Toggle").checked){
+                document.getElementById("navbarul").style.display="block";
+                document.getElementById("toggleImage").src="./images/x-blue.png";
+            }
+            else{
+                document.getElementById("navbarul").style.display="none";
+                document.getElementById("toggleImage").src="./images/hamburger.png";
+            }
+        }
+    </script>
+</body>
+</html>

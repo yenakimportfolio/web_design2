@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="donate.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Lobster">
+
+    <title>LA Animal Shelter Website</title>
+
+</head>
+<body>
+    <div class="alert" id="alertDiv">
+        <p>
+            Our Centers are open by appointment only, so you can still foster and adopt a pet. Due to COVID-19 and City Order, our Administrative Offices are temporarily closed to the public. <br>
+            For general assistance, please call (888) 452-7381. | For assistance with animal licensing, please call (213) 482-9550.
+        </p>
+        <img src="./images/x-white.png" alt="x button" onclick="hideAlert()">
+    </div>
+    <div class="wrapper">
+        <div class="logo">   
+            <nav>
+                <a href="index.html"><img src="./images/logo.png" alt="logo" class="nav-logo"></a>
+            </nav>
+        </div>
+        <div class="navbar">
+            <nav>
+                <label for="Toggle">
+                    <img src="./images/hamburger.png" alt="menu toggle" class="toggle-img" id="toggleImage">
+                </label>
+                <input type="checkbox" id="Toggle" onclick="toggleMe()">
+                <ul id="navbarul">
+                    <li><a href="about.html">What We Do</a></li>
+                    <li><a href="blog.html">Our Stories</a></li>
+                    <li><a href="donate.html">How To Help</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="donate">
+            <button id="donatebutton" onclick="location.href='donate.html'">DONATE</button>
+        </div>
+    </div>
+    <div class="donatepage">
+        <div class="donatephoto">
+            <p>Meet Your Future Family!</p>
+            <div class="donategallery">
+                <img class="donatethumbnails" src="./images/adoption1.png" onclick="showPhoto(1)">
+                <img class="donatethumbnails" src="./images/adoption2.png" onclick="showPhoto(2)">
+                <img class="donatethumbnails" src="./images/adoption3.png" onclick="showPhoto(3)">
+                <img class="donatethumbnails" src="./images/adoption4.png" onclick="showPhoto(4)">
+                <img class="donatethumbnails" src="./images/adoption5.png" onclick="showPhoto(5)">
+                <img class="donatemainimage" src="./images/adoption1.png" alt="photo" id="mainimage"></img>
+            </div>
+        </div>
+        <div class="donatetext">
+                    <input type="radio" id="donatetypem" name="donatetype" value="M" onclick="donateTypeChanged()" checked>
+                <label for="donatetypem">MONTHLY</label>
+                    <input type="radio" id="donatetypeo" name="donatetype" value="O" onclick="donateTypeChanged()">
+                <label for="donatetypeo">ONE-TIME</label>
+                <h2 id="donatetitle">Donate Monthly to Help</h2>
+                <p id="donateblurb">Just $19 a month (or whatever you can afford) will make an impact in the ongoing fight to protect animals.</p>
+                <p>Choose Your Amount:</p>
+                    <input type="radio" id="donatevalue19" name="donatevalue" value="19" >
+                <label for="donatevalue19">$19</label> 
+                    <input type="radio" id="donatevalue25" name="donatevalue" value="25" checked>
+                <label for="donatevalue25">$25</label>
+                    <input type="radio" id="donatevalue36" name="donatevalue" value="36">
+                <label for="donatevalue36">$36</label><br><br>
+                <label for="donatevalueother">Other Amount:</label><br>
+                    <input type="text" id="donatevalueother" name="donatevalueother" value="" onkeypress="disableDonateValues()">
+                        <p>&nbsp;</p>
+                <h4><p>YOUR INFORMATION</p></h4>
+                <label for="firstname">First Name*</label><br>
+                    <input type="text" class="yourinfo" id="firstname"><p/>
+                <label for="lastname">Last Name*</label><br>
+                    <input type="text" class="yourinfo" id="lastname"><p/>
+                <label for="email">Email Address*</label><br>
+                    <input type="text" class="yourinfo" id="email"><p/>
+                <label for="streetaddress">Street Address*</label><br>
+                    <input type="text" class="yourinfo" id="streetaddress"><p/>
+                <label for="apartmentnumber">Apartment,suite,or other</label><br>
+                    <input type="text" class="yourinfo" id="apartmentnumber"><p/>
+                <label for="city">City*</label><br>
+                    <input type="text" class="yourinfo" id="city"><p/>
+                <label for="state">State*</label><br>
+                <select id="state" size="1" >
+                    <option ></option>
+                    <option value="AK" >AK - Alaska</option>
+                    <option value="AL" >AL - Alabama</option>
+                    <option value="AR" >AR - Arkansas</option>
+                    <option value="AZ" >AZ - Arizona</option>
+                    <option value="CA" >CA - California</option>
+                    <option value="CO" >CO - Colorado</option>
+                    <option value="CT" >CT - Connecticut</option>
+                    <option value="DC" >DC - District of Columbia</option>
+                    <option value="DE" >DE - Delaware</option>
+                    <option value="FL" >FL - Florida</option>
+                    <option value="GA" >GA - Georgia</option>
+                    <option value="HI" >HI - Hawaii</option>
+                    <option value="IA" >IA - Iowa</option>
+                    <option value="ID" >ID - Idaho</option>
+                    <option value="IL" >IL - Illinois</option>
+                    <option value="IN" >IN - Indiana</option>
+                    <option value="KS" >KS - Kansas</option>
+                    <option value="KY" >KY - Kentucky</option>
+                    <option value="LA" >LA - Louisiana</option>
+                    <option value="MA" >MA - Massachusetts</option>
+                    <option value="MD" >MD - Maryland</option>
+                    <option value="ME" >ME - Maine</option>
+                    <option value="MI" >MI - Michigan</option>
+                    <option value="MN" >MN - Minnesota</option>
+                    <option value="MO" >MO - Missouri</option>
+                    <option value="MS" >MS - Mississippi</option>
+                    <option value="MT" >MT - Montana</option>
+                    <option value="NC" >NC - North Carolina</option>
+                    <option value="ND" >ND - North Dakota</option>
+                    <option value="NE" >NE - Nebraska</option>
+                    <option value="NH" >NH - New Hampshire</option>
+                    <option value="NJ" >NJ - New Jersey</option>
+                    <option value="NM" >NM - New Mexico</option>
+                    <option value="NV" >NV - Nevada</option>
+                    <option value="NY" >NY - New York</option>
+                    <option value="OH" >OH - Ohio</option>
+                    <option value="OK" >OK - Oklahoma</option>
+                    <option value="OR" >OR - Oregon</option>
+                    <option value="PA" >PA - Pennsylvania</option>
+                    <option value="RI" >RI - Rhode Island</option>
+                    <option value="SC" >SC - South Carolina</option>
+                    <option value="SD" >SD - South Dakota</option>
+                    <option value="TN" >TN - Tennessee</option>
+                    <option value="TX" >TX - Texas</option>
+                    <option value="UT" >UT - Utah</option>
+                    <option value="VA" >VA - Virginia</option>
+                    <option value="VT" >VT - Vermont</option>
+                    <option value="WA" >WA - Washington</option>
+                    <option value="WI" >WI - Wisconsin</option>
+                    <option value="WV" >WV - West Virginia</option>
+                    <option value="WY" >WY - Wyoming</option>
+                    <option value="AS" >AS - American Samoa</option>
+                    <option value="FM" >FM - Federated States of Micronesia</option>
+                    <option value="GU" >GU - Guam</option>
+                    <option value="MH" >MH - Marshall Islands</option>
+                    <option value="MP" >MP - Northern Mariana Islands</option>
+                    <option value="PR" >PR - Puerto Rico</option>
+                    <option value="PW" >PW - Palau</option>
+                    <option value="VI" >VI - Virgin Islands</option>
+                    <option value="AA" >AA - Armed Forces Americas</option>
+                    <option value="AE" >AE - Armed Forces</option>
+                    <option value="AP" >AP - Armed Forces Pacific</option>
+                    <option value="AB" >AB - Alberta</option>
+                    <option value="BC" >BC - British Columbia</option>
+                    <option value="MB" >MB - Manitoba</option>
+                    <option value="NB" >NB - New Brunswick</option>
+                    <option value="NL" >NL - Newfoundland and Labrador</option>
+                    <option value="NS" >NS - Nova Scotia</option>
+                    <option value="NT" >NT - Northwest Territories</option>
+                    <option value="NU" >NU - Nunavut</option>
+                    <option value="ON" >ON - Ontario</option>
+                    <option value="PE" >PE - Prince Edward Island</option>
+                    <option value="QC" >QC - Quebec</option>
+                    <option value="SK" >SK - Saskatchewan</option>
+                    <option value="YT" >YT - Yukon</option>
+                    <option value="None" >None</option>
+               
+               </select><p/>
+                <label for="zipcode">Zip code*</label><br>
+                    <input type="text" class="yourinfo" id="zipcode"><p/>
+                        <p>&nbsp;</p>
+               <h4><p>PAYMENT</p></h4>
+               <label for="cardnumber">Credit card number*</label><br>
+                   <input type="text" class="yourinfo" id="cardnumber"><p/>
+                <label for="expdate">Expiration date(MM/YY)*</label><br>
+                   <input type="text" class="yourinfo" id="expdate"><p/>
+                <label for="seccode">Security code*</label><br>
+                   <input type="text" class="yourinfo" id="seccode"><p/>
+
+                <br><button onclick="donate()">DONATE NOW</button>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footerimage">
+            <img src="./images/facebook.png" alt="facebook logo">
+            <img src="./images/twitter.png" alt="twitter logo">
+            <img src="./images/instagram.png" alt="instagram logo">
+        </div>
+        <p>
+            Department of Animal Services
+            221 N. Figueroa Street, Suite 600, Los Angeles, CA 90012 (888) 452-7381. Administrative Office Hours: Mon. - Fri. (8am-5pm) Sat., Sun. & Holidays. <br> Our Administrative Office is currently closed due to COVID-19. However, we will be checking messages hourly during the regular business hours of 8am-5pm Monday through Friday.
+        </p>
+    </div>
+    <script src="scripts.js"></script>
+    <script>
+        function hideAlert(){
+            document.getElementById("alertDiv").style.display="none";
+        }
+        function showPhoto(n){
+            if(n==1){
+                document.getElementById("mainimage").src="./images/adoption1.png";
+            }
+            if(n==2){
+                document.getElementById("mainimage").src="./images/adoption2.png";
+            }
+            if(n==3){
+                document.getElementById("mainimage").src="./images/adoption3.png";
+            }
+            if(n==4){
+                document.getElementById("mainimage").src="./images/adoption4.png";
+            }
+            if(n==5){
+                document.getElementById("mainimage").src="./images/adoption5.png";
+            }
+        }
+        function donate(){
+            document.getElementById("donatevalueother").value="";
+            document.getElementById("firstname").value="";
+            document.getElementById("lastname").value="";
+            document.getElementById("email").value="";
+            document.getElementById("streetaddress").value="";
+            document.getElementById("apartmentnumber").value="";
+            document.getElementById("city").value="";
+            document.getElementById("state").selectedIndex=0;
+            document.getElementById("zipcode").value="";
+            document.getElementById("cardnumber").value="";
+            document.getElementById("expdate").value="";
+            document.getElementById("seccode").value="";
+
+            alert("Thank You For Your Donation!");
+        }
+        function disableDonateValues(){
+            document.getElementById('donatevalue19').checked=false;
+            document.getElementById('donatevalue25').checked=false;
+            document.getElementById('donatevalue36').checked=false;
+        }
+        function donateTypeChanged(){
+            if(document.getElementById("donatetypem").checked){
+                document.getElementById("donatetitle").innerHTML="Donate Monthly to Help Animals";
+                document.getElementById("donateblurb").innerHTML="Just $19 a month (or whatever you can afford) will make an impact in the ongoing fight to protect animals.";
+            }
+            else{
+                document.getElementById("donatetitle").innerHTML="One Time Gift";
+                document.getElementById("donateblurb").innerHTML="Don't let another animal be a victim of cruel and senseless abuse. Act now.";
+            }
+        }
+        function toggleMe(){
+            if(document.getElementById("Toggle").checked){
+                document.getElementById("navbarul").style.display="block";
+                document.getElementById("toggleImage").src="./images/x-blue.png";
+            }
+            else{
+                document.getElementById("navbarul").style.display="none";
+                document.getElementById("toggleImage").src="./images/hamburger.png";
+            }
+        }
+    </script>
+</body>
+</html>

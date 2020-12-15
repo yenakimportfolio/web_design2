@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Lobster">
+
+    <title>LA Animal Shelter Website</title>
+
+</head>
+<body>
+    <div class="alert" id="alertDiv">
+        <p>
+            Our Centers are open by appointment only, so you can still foster and adopt a pet. Due to COVID-19 and City Order, our Administrative Offices are temporarily closed to the public. <br>
+            For general assistance, please call (888) 452-7381. | For assistance with animal licensing, please call (213) 482-9550.
+        </p>
+        <img src="./images/x-white.png" alt="x button" onclick="hideAlert()">
+    </div>
+    <div class="wrapper">
+        <div class="logo">   
+            <nav>
+                <a href="index.html"><img src="./images/logo.png" alt="logo" class="nav-logo"></a>
+            </nav>
+        </div>
+        <div class="navbar">
+            <nav>
+                <label for="Toggle">
+                    <img src="./images/hamburger.png" alt="menu toggle" class="toggle-img" id="toggleImage">
+                </label>
+                <input type="checkbox" id="Toggle" onclick="toggleMe()">
+                <ul id="navbarul">
+                    <li><a href="about.html">What We Do</a></li>
+                    <li><a href="blog.html">Our Stories</a></li>
+                    <li><a href="donate.html">How To Help</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="donate">
+            <button id="donatebutton" onclick="location.href='donate.html'">DONATE</button>
+        </div>
+    </div>
+    <div class="blogcontent">
+        <div class="blogphoto0">
+            <img src="./images/blogphoto1.png" alt="photo">
+        </div>
+        <div class="blogtext0">
+            <h3>Adopting a Bunny</h3>
+                <p>Issued Dec.4.2020</p>
+            <p>Rabbits are often known affectionately by the pet name bunny or bunny rabbit , especially when referring to young, domesticated rabbits. A healthy indoor pet rabbit can live up to 10 years and longer. They enjoy throwing around toys and chewing on cardboard. In some home environments, they can develop an affinity with cats and even dogs. Though they are often caged in small areas, they can be trained to live as free-roaming pets, similar to cats and dogs. As pet rabbit medicine, diet and living environment improves, the rabbit’s life span increases... </p>
+            <a href="">Click here to read more 🠪 </a><p>
+        </div>
+        <div class="blogphoto1">
+            <img src="./images/blogphoto3.png" alt="photo">
+        </div>
+        <div class="blogtext1">
+            <h3>How to improve your friendship with your pet</h3>
+                <p>Issued Nov.8.2020</p>
+            <p>Regular veterinary care and vaccinations are important to keep your companion animals healthy. You will want to visit veterinary offices and decide who your best friend’s doctor is going to be before he or she gets sick. Ask your friends who have pets for a recommendation. Look for an office that is clean and smells good, the receptionist and staff are welcoming. Make an appointment to see the entire clinic and to meet the veterinarian. If you are uncomfortable for any reason, find another veterinarian... </p>
+            <a href="">Click here to read more 🠪 </a><p>
+        </div>
+        <div class="blogphoto2">
+            <img src="./images/blogphoto2.png" alt="photo">
+        </div>
+        <div class="blogtext2">
+            <h3>Grooming for Dogs</h3>
+                <p>Issued Oct.12.2020</p>
+            <p>Clean your companion animal’s ears at least two times per month. The skin inside the ear flaps should be pale pink. If there is a bad odor and/or any red, brown, or black skin, you should have a veterinarian examine your companion animal’s ears. Use a cotton ball moistened with baby oil or warm water to gently wipe the opening to the ear canal and ear flaps. Do not stick anything into the ear canal.Brush your companion animal’s teeth. Companion animals can get cavities too! Companion animal supply stores sell toothpaste with a small rubber “toothbrush” for cats and dogs that you put on you finger and... </p>
+            <a href="">Click here to read more 🠪 </a><p>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footerimage">
+            <img src="./images/facebook.png" alt="facebook logo">
+            <img src="./images/twitter.png" alt="twitter logo">
+            <img src="./images/instagram.png" alt="instagram logo">
+        </div>
+        <p>
+            Department of Animal Services
+            221 N. Figueroa Street, Suite 600, Los Angeles, CA 90012 (888) 452-7381. Administrative Office Hours: Mon. - Fri. (8am-5pm) Sat., Sun. & Holidays. <br> Our Administrative Office is currently closed due to COVID-19. However, we will be checking messages hourly during the regular business hours of 8am-5pm Monday through Friday.
+        </p>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        function hideAlert(){
+            document.getElementById("alertDiv").style.display="none";
+        }
+        function toggleMe(){
+            if(document.getElementById("Toggle").checked){
+                document.getElementById("navbarul").style.display="block";
+                document.getElementById("toggleImage").src="./images/x-blue.png";
+            }
+            else{
+                document.getElementById("navbarul").style.display="none";
+                document.getElementById("toggleImage").src="./images/hamburger.png";
+            }
+        }
+    </script>
+</body>
+</html>

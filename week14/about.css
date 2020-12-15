@@ -1,0 +1,311 @@
+.logo {
+    grid-area: logo;
+}
+
+.navbar {
+    grid-area: navbar;
+}
+
+.aboutheader {
+    grid-area: aboutheader;
+}
+
+.aboutmission {
+    grid-area: aboutmission;
+}
+.aboutmission p {
+    text-align: justify;
+}
+.aboutphoto1 {
+    grid-area: aboutphoto1;
+}
+.aboutphoto1 img { 
+    width: 418px;
+}
+.aboutphoto2 {
+    grid-area: aboutphoto2;
+}
+.aboutphoto2 img { 
+    width: 418px;
+}
+.aboutvision {
+    grid-area: aboutvision;
+}
+.aboutvision p {
+    text-align: justify;
+}
+.aboutphoto3 {
+    grid-area: aboutphoto3;
+}
+.aboutphoto3 img { 
+    width: 418px;
+}
+.aboutstory {
+    grid-area: aboutstory;
+}
+.aboutstory p {
+    text-align: justify;
+}
+.donate {
+    grid-area: donate;
+    padding-left: 35px;
+    padding-top: 26px;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 50% 10% 40%;
+    grid-template-areas:
+    "logo donate navbar";
+    color: #444;
+}
+
+img.toggle-img { 
+    width: 50px;
+    padding-top: 25px;
+    padding-right: 25px;
+}
+
+input#Toggle {
+    display: none; 
+}
+
+label[for="Toggle"] {
+    float: right; 
+}
+
+nav ul { 
+    list-style: none;
+    margin: 0px;
+    padding: 20px 7px 0px;
+    display: none;
+    text-align: right;
+}
+
+nav ul li { 
+    padding: 10px 0px; 
+}
+
+nav ul li:last-child { 
+    border-bottom: none;
+}
+
+nav ul a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    color: skyblue;
+}
+
+.nav-logo {
+    max-width: 100%;
+    width: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    margin: auto auto;
+    text-align: left;
+}
+#navbarul {
+    display: none;
+    padding-top: 100px;
+    padding-right: 25px;
+    font-family: 'Open Sans';
+}
+#donateul {
+    display: none;
+}
+#donatebutton {
+    width: 108px;
+    height: 50px;
+    background-color: rgb(211, 68, 48);
+    border: none;
+    color: white;
+}
+.alert {
+    width: 100%;
+    margin: auto auto; 
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.alert img { 
+    width: 32px;
+    cursor: pointer;
+}
+.alert p {
+    float: left;
+    text-align: justify;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+body { 
+    margin: 0px;
+}
+.aboutcontent {
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 100%;
+    grid-template-areas:
+    "aboutphoto1"
+    "aboutmission"
+    "aboutphoto2"
+    "aboutvision"
+    "aboutphoto3"
+    "aboutstory";
+    background-color: #fff;
+    color: #444;
+    width: 420px;
+    margin: auto auto; 
+    padding-top: 50px;
+}
+.aboutheader h1 { 
+    text-align: center;
+    font-family: 'Open Sans';
+}
+.footer {
+    width: 90%;
+    text-align: justify;
+    margin: auto auto;
+    padding-top: 50px;
+}
+.footerimage {
+    width: 400px;
+    margin: auto auto;
+    text-align: center;
+}
+.footerimage img {
+    width: 100px;
+}
+@media(min-width: 1024px){
+    label[for="Toggle"]{
+        display: none;
+    }
+    .alert {
+        width: 1680px;
+    }
+    .wrapper {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 20% 60% 20%;
+        grid-template-areas:
+        "logo navbar donate";
+        color: #444;
+        width: 1680px;
+        margin: auto auto;
+    }
+    .navbar {
+        padding-top: 30px;
+    }
+    nav ul {
+        display: block;
+        float: none; 
+        padding: 0px;
+        width: 90%;
+        margin: auto auto; 
+        padding-top: 10px;
+        text-align: center;
+    }
+    nav ul li {
+        list-style: none; 
+        display: inline-block; 
+        margin-right: 20px;
+        padding: 10px 0px; 
+
+    }
+    .nav-logo {
+        max-width: 100%;
+        width: 100px;
+        display: block;
+        margin: 0px;
+    }
+    #navbarul {
+        display: block !important;
+        padding-top: 10px;
+        padding-right: 0px;
+    }
+    .donate { 
+        padding-top: 30px;
+        margin: 0px;
+        text-align: right;
+        padding-right: 20px;
+    }
+    #donateul {
+        display: block !important;
+        text-align: right;
+        margin: 0px;
+        background-color: red;
+    }
+    #donatenav { 
+        padding-right: 0px !important; 
+        margin: 0px;
+        background-color: royalblue;
+        text-align: right;
+    }
+    #donatebutton {
+        width: 200px;
+        height: 60px;
+        background-color: rgb(211, 68, 48);
+        border: none;
+        color: white;
+        font-size: 20px;
+    }
+    .aboutcontent {
+        display: grid;
+        grid-gap: 0px;
+        grid-template-columns: 50% 50%;
+        grid-template-areas:
+        "aboutmission aboutphoto1"
+        "aboutphoto2 aboutvision"
+        "aboutphoto3 aboutphoto3" 
+        "aboutstory aboutstory";
+        background-color: #fff;
+        color: #444;
+        width: 1200px;
+        margin: auto auto;
+        padding-top: 100px; 
+    }
+    .aboutmission p {
+        text-align: justify;
+    }
+    .aboutmission{ 
+        padding-right: 20px;
+    }
+    .aboutphoto1 img { 
+        width: 100%;
+    }
+    .aboutphoto2 img { 
+        width: 100%;
+    }
+    .aboutvision p {
+        text-align: justify;
+    }
+    .aboutvision { 
+        padding-left: 20px;
+    }
+    .aboutphoto3 img { 
+        width: 100%;
+    }
+    .aboutstory p {
+        text-align: justify;
+    }
+    .alert p {
+        padding-left: 100px;
+        vertical-align: top;
+        position: relative;
+        top: -18px;
+        left: 200px;
+    }
+    .footer {
+        width: 1680px;
+        text-align: center;
+        margin: auto auto;
+    }
+}
